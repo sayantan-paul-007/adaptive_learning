@@ -6,6 +6,7 @@ import WhatsappButton from '../WhatsappButton'
 import Aboutus from '../Aboutus'
 import Youtube from '../Youtube'
 import AdaptiveGrid from '../AdaptiveGrid'
+import Testimonial from '../Testimonial'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Aboutus />
         <Youtube />
         <AdaptiveGrid />
+        <Testimonial />
     </div>
   )
 }
