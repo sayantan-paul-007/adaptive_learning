@@ -4,7 +4,7 @@ import playstore from './images/play_store.png'
 import applestore from './images/apple_store.png'
 const Footer = () => {
   return (
-    <footer>
+    <footer className='bg-primary-700'>
               <div
             class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div class="flex-shrink-0 w-64 mx-auto flex justify-center md:mx-0 md:text-left">
