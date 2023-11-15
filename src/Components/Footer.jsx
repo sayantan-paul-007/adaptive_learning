@@ -5,7 +5,72 @@ import applestore from './images/apple_store.png'
 const Footer = () => {
   return (
     <footer>
-      <img src={logo1} alt="" />
+              <div
+            class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex-shrink-0 w-64 mx-auto flex justify-center md:mx-0 md:text-left">
+            <img src={logo1} height='128' width='128' alt="" />
+            </div>
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase">About</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Company</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Careers</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Blog</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Contact Support</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Help Resources</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Release Updates</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase title-font">Platform
+                    </h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Terms &amp; Privacy</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Pricing</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">FAQ</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Send a Message</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Request a Quote</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">+123-456-7890</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+      
       <div className="w-full py-10  border-b border-gray-500">
           <h5 className='font-notosans font-semibold text-3xl py-5'>Get our mobile app</h5>
           <div className="flex justify-center items-center gap-10">
