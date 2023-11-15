@@ -1,3 +1,4 @@
+import { Carousel } from 'flowbite-react'
 import React from 'react'
 
 const Testimonial = () => {
@@ -10,7 +11,8 @@ const Testimonial = () => {
         </div>
         <div className="w-1/2 flex flex-row justify-center">
            <div className="px-6">
-          <TestimonyCard />
+           
+                <TestimonyCard />
            </div>
         </div>
     </section>
@@ -21,7 +23,8 @@ export default Testimonial
 
 const TestimonyCard = () => {
  return(
-    <section class="bg-white rounded-lg dark:bg-gray-900">
+    
+        <section class="bg-white rounded-lg">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <figure class="max-w-screen-md mx-auto">
             <svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,5 +42,7 @@ const TestimonyCard = () => {
         </figure>
     </div>
   </section>
+   
+    
  )
 }
