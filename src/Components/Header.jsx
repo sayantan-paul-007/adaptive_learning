@@ -1,30 +1,29 @@
 import React from 'react'
 import { Button } from 'flowbite-react';
 import logo from '../Components/images/logo-new.png'
+import logomobile from '../Components/images/logo-mobile.png'
 import '../index.css'
+import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-//     <section className='py-3 px-20 h-30'>
-// {/* <img src={logo} className='h-13' alt="Adaptive Learning" /> */}
-//     </section>
-
-    <section className='py-3 px-20 h-[90px]  justify-between w-full items-center border-b border-gray-300'>
-       <nav className='flex justify-between items-center flex-row bg-slate-50'> 
-        <img src={logo} className='h-[60px]' alt="Adaptive Learning" />
-        <div className='grid grid-cols-5 gap-x-6 text-xl'>
-        <a href="https://www.google.com">Home</a>
-        <a href="https://www.google.com">About Us</a>
-        <a href="https://www.google.com">Freebies</a>
-        <a href="https://www.google.com">Blog</a>
-        <a href="https://www.google.com">Contact Us</a>
+    <section className='py-3 desktop:px-[120px] laptop:px-20 tablet:px-10 mobile:px-8 mobile:py-4 justify-between w-full items-center border-b border-gray-300'>
+       <nav className='flex justify-between max-laptop:justify-center items-center flex-row bg-slate-50'> 
+        <img src={logo} className='h-[60px] desktop:h-20 laptop:block mobile:hidden max-mobile:hidden' alt="Adaptive Learning" />
+        <img src={logomobile} className='h-12 tablet:h-16  laptop:hidden ' />
+        <div className='hidden grid-cols-5 gap-x-6 text-xl text-center laptop:grid '>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/freebies">Freebies</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
         
-        <div className="button">
-         <Button className='text-lg bg-primary-500' size="lg" >
+        <div className="button hidden laptop:block">
+         <Button className=' text-lg bg-primary-500' size="lg" >
           Login
          </Button>
         </div>
-        
        </nav>
     </section>
   )
