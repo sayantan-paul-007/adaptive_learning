@@ -1,0 +1,9 @@
+.swiper-pagination{
+    position: relative;
+    padding-top: 1rem;
+}
+.swiper-pagination-bullet{
+    background-color: aqua;
+    height: .95rem;
+    width:.95rem;
+}

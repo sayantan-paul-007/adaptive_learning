@@ -4,8 +4,9 @@ import WhatsappButton from '../WhatsappButton'
 import Youtube from '../Youtube'
 import Testimonial from '../Testimonial'
 import Footer from '../Footer'
+import Carousel from '../Carousel'
 import logo1 from '../images/logo.png'
-import { Carousel, Card} from 'flowbite-react'
+import {  Card} from 'flowbite-react'
 import { Icon } from '@iconify/react';
 import flex from '../images/flexibility.png'
 import vlearn from '../images/virtual-class.png'
@@ -14,29 +15,10 @@ import afford from '../images/affordable.png'
 import quality from '../images/high-quality.png'
 import progress from '../images/tracking.png'
 import mockup from '../images/mockup.png'
+import MetaBox from '../MetaBox'
+import AdapFeatures from '../AdapFeatures'
 const Home = () => {
-  const metaboxdata = [
-    {
-        iconlink:"iconoir:youtube",
-        count: 300000,
-        text: "Views on YouTube"
-    },
-    {
-        iconlink:"carbon:time",
-        count: 232000,
-        text: "Watch Hours"
-    },
-    {
-        iconlink:"ph:users-four-light",
-        count: 40600,
-        text: "Subscribers"
-    },
-    {
-        iconlink:"fluent:video-recording-20-regular",
-        count: 8000,
-        text: "Recorded Content"
-    }
-];
+
 const adaptive = [
   {
     icon: flex,
@@ -73,65 +55,37 @@ const adaptive = [
     <div>
       <WhatsappButton />
         <Header />
-       {/* Hero Section */}
-        <div className=' py-4 flex justify-center bg-red-100'>
-      <div className=" bg-violet-700 w-4/5 rounded-md">
-     <div className="h-[480px]">
-      <Carousel>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-      </Carousel>
-    </div>
-      </div>    
-    </div>
-        
-        {/* Meta Box Section */}
-        <section className='w-full py-5 rounded-lg bg-slate-100 flex flex-row justify-center'>
-        <div className='bg-primary-500 rounded-xl shadow-xl px-5 py-3 w-[65%] flex flex-row justify-around '>
-            {
-                metaboxdata.map((meta) =>(
-                   <div className='text-accent-500 flex flex-col w-full items-center'>
-                    <div className='py-2'><Icon icon={meta.iconlink} className='text-5xl ' /></div>
-                    
-                        <p className='text-2xl font-bold'>
-                             {meta.count}+
-                        </p>
-                       
-                        <p className='text-lg'>
-                        {meta.text}
-                    </p>
-                   </div>
-                  
-                    
-                )
-                )
-            }
-        </div>
-    </section>
+        <section className="py-5 px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 ">
+           <Carousel />
+        </section>  
+        <MetaBox />     
         {/* About Section */}
-        <section className='px-20 py-10 flex bg-neutral-300 flex-row justify-around items-center gap-10'>
-        <div className=' text-left w-8/12'>
-            <h3 className='font-bold font-montserrat text-[54px] py-2'>
+        <section className='px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-8   bg-neutral-300 '>
+        <h3 className='font-bold text-center hidden font-montserrat text-[54px] py-2 max-mobile:block'>
                 About <span className='text-logo_pink'>Us</span>
             </h3>
-            <p className='font-notosans text-base'>
+            <div className=' flex flex-row max-mobile:flex-col-reverse justify-around items-center gap-10'>
+            <div className=' text-left w-8/12 max-mobile:w-full'>
+            <h3 className='font-bold max-mobile:hidden font-montserrat text-7xl max-laptop:text-[54px] py-4 max-laptop:py-3'>
+                About <span className='text-logo_pink'>Us</span>
+            </h3>
+            <p className='font-notosans max-laptop:text-base text-2xl py-3 max-laptop:py-0'>
             Adaptive Learning is an interactive video platform that teaches academic concepts through hands-on methods, focusing on practical outcomes. It strives to make education accessible to all by using technology to deliver current knowledge and important causes. Embracing a tech-driven future, it follows the Three E's philosophy: ENGAGE, EDUCATE, and ENLIGHTEN. By merging traditional and modern teaching, it offers a balanced learning experience.
             </p>
-            <button className='my-8 text-lg font-semibold text-white rounded-lg py-2 px-6 bg-logo_blue'> 
+            <button className='my-8 py-6 px-8 text-2xl max-laptop:text-lg font-semibold text-white rounded-lg max-laptop:py-2 max-laptop:px-6 bg-logo_blue'> 
         Know More
       </button>
         </div>
-        <div className='flex flex-row w-2/5 justify-center'>
-            <img src={logo1} alt='Adaptive Logo' className='w-full' />
+        <div className='flex flex-row w-2/5  max-mobile:w-full justify-center'>
+            <img src={logo1} alt='Adaptive Logo' className='max-mobile:w-4/5 max-laptop:w-full w-4/5' />
         </div>
+            </div>
+      
     </section>
         <Youtube />
         {/* Why choose Adaptive Learning */}
-        <section className="px-20 py-10 bg-primary-600">
-      <h3 className="font-bold font-montserrat text-white text-[54px] py-2">
+        <section className=" px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-10 max-mobile:py-5 bg-primary-600">
+      <h3 className="font-bold font-montserrat text-center text-white  text-7xl max-laptop:text-[54px] max-tablet:text-4xl max-mobile:text-3xl py-4 max-laptop:py-3">
         Why Choose <span className='text-logo_yellow'>ADAPTIVE LEARNING</span> 
       </h3>
       <div className="rounded-xl px-28 gap-8 py-10 grid grid-cols-3 font-notosans justify-around ">

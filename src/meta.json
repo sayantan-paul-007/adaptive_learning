@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "iconlink":"iconoir:youtube",
+        "count": 300000,
+        "text": "Views on YouTube"
+    },
+    {
+        "id":2,
+        "iconlink":"carbon:time",
+        "count": 232000,
+        "text": "Watch Hours"
+    },
+    {
+        "id":3,
+        "iconlink":"ph:users-four-light",
+        "count": 40600,
+        "text": "Subscribers"
+    },
+    {
+        "id":4,
+        "iconlink":"fluent:video-recording-20-regular",
+        "count": 8000,
+        "text": "Recorded Content"
+    }
+]

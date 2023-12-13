@@ -7,10 +7,9 @@ module.exports = {
   theme: {
     screens: {
       // 'fourk': '2560px',
-      'desktop': '1440px',
-      'laptop': '1024px',
-      'tablet': '768px',
-      'mobile': '428px'
+      'laptop': '1367px',
+      'tablet': '1025px',
+      'mobile': '431px'
       
     },
     colors:{
