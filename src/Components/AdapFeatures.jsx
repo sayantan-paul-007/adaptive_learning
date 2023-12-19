@@ -9,7 +9,7 @@ const AdapFeatures = () => {
       <div className="rounded-xl px-28 gap-8 py-10 grid grid-cols-3 max-mobile:grid-cols-1 font-notosans justify-around ">
         {Adaptive && Adaptive.map( (adapt) =>{
             return(
-               <div className='shadow-lg bg-white p-4 rounded-lg' key={adapt.id}>
+               <div className='shadow-lg bg-white p-4 w-full rounded-lg' key={adapt.id}>
                 <div className="flex justify-center py-5">
               <img src={(adapt.path)} className="h-[100px] w-[100px] " alt={adapt.alt} />
             
