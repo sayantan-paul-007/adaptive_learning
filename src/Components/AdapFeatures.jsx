@@ -6,7 +6,7 @@ const AdapFeatures = () => {
       <h3 className="font-bold font-montserrat text-center text-white  text-7xl max-laptop:text-[54px] max-tablet:text-4xl max-mobile:text-3xl py-4 max-laptop:py-3">
         Why Choose <span className='text-logo_yellow'>ADAPTIVE LEARNING</span> 
       </h3>
-      <div className="rounded-xl px-28 gap-8 py-10 grid grid-cols-3 font-notosans justify-around ">
+      <div className="rounded-xl px-28 gap-8 py-10 grid grid-cols-3 max-mobile:grid-cols-1 font-notosans justify-around ">
         {Adaptive && Adaptive.map( (adapt) =>{
             return(
                <div className='shadow-lg bg-white p-4 rounded-lg' key={adapt.id}>
