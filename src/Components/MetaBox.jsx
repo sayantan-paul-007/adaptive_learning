@@ -13,7 +13,7 @@ const MetaBox = () => {
                     <p className='text-3xl max-laptop:text-2xl  font-bold'>
                              {datameta.count}+
                     </p>
-                    <p className='text-2xl  max-laptop:text-lg py-2 max-laptop:py-1'>
+                    <p className='text-2xl  max-laptop:text-lg max-mobile:text-base py-2 max-laptop:py-1'>
                         {datameta.text}
                     </p>
                 </div>
