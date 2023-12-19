@@ -31,7 +31,7 @@ const Header = () => {
           Login
          </Button>
         </div>
-        <div className='hidden max-mobile:block tablet:block absolute right-0'>
+        <div className='hidden max-mobile:block absolute right-0'>
         <Icon onClick={toggleMenu} className='text-2xl' icon="mdi:hamburger-menu" />
         </div>
        </nav>

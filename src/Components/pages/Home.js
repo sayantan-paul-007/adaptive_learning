@@ -6,44 +6,10 @@ import Testimonial from '../Testimonial'
 import Footer from '../Footer'
 import Carousel from '../Carousel'
 import logo1 from '../images/logo.png'
-import {  Card} from 'flowbite-react'
-import { Icon } from '@iconify/react';
+import mockup from '../images/mockup.png'
 import MetaBox from '../MetaBox'
 import AdapFeatures from '../AdapFeatures'
 const Home = () => {
-
-const adaptive = [
-  {
-    icon: flex,
-    title: "Flexible Learning Environment",
-    body: "Enjoy the convenience of learning from anywhere, at any time. Our online educational platform provides a flexible and accessible environment, allowing you to study at your own pace and fit your education around your schedule.",
-  },
-  {
-    icon: vlearn,
-    title: "Personalized Learning",
-    body: "At Adaptive Learning, we believe that one size doesn't fit all. Our platform is designed to meet your unique learning needs. Whether you're a student, professional, or lifelong learner, we offer tailored courses and resources that adapt to your pace and goals.",
-  },
-  {
-    icon: support,
-    title: "Supportive Community",
-    body: "Learning can be a social experience too. Our platform fosters a vibrant and inclusive learning community. Connect with fellow learners, instructors, and mentors. Share ideas, ask questions, and gain valuable insights from your peers.",
-  },
-  {
-    icon: afford,
-    title: "Affordability",
-    body: "Quality education shouldn't break the bank. Adaptive Learning offers competitive pricing and flexible payment options. We're dedicated to making education accessible to everyone.",
-  },
-  {
-    icon: quality,
-    title: "Quality Content",
-    body: "Our courses are created by experts in their respective fields. We provide a diverse range of up-to-date, high-quality content that's relevant to today's world, ensuring you gain valuable skills and knowledge that matter.",
-  },
-  {
-    icon: progress,
-    title: "Track Your Progress",
-    body: "Monitor your achievements and progress with ease. Our platform offers comprehensive analytics and reporting, so you can visualize your growth and make data-driven decisions about your learning path.",
-  },
-];
   return (
     <div>
       <WhatsappButton />
@@ -77,18 +43,13 @@ const adaptive = [
     </section>
         <Youtube />
         {/* Why choose Adaptive Learning */}
-        <section className=" px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-10 max-mobile:py-5 bg-primary-600">
-      <h3 className="font-bold font-montserrat text-center text-white  text-7xl max-laptop:text-[54px] max-tablet:text-4xl max-mobile:text-3xl py-4 max-laptop:py-3">
-        Why Choose <span className='text-logo_yellow'>ADAPTIVE LEARNING</span> 
-      </h3>
-     
-    </section>
+        <AdapFeatures />
     {/* Modes of Learning */}
-    <section className="px-20 py-10 bg-yellow-100">
-    <h3 className="font-bold font-montserrat text-[54px] py-2">
+    <section className="px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-8 bg-yellow-100">
+    <h3 className="font-bold text-center font-montserrat text-[54px] py-2">
        Our Modes of Learning
       </h3>
-      <div className="py-10">
+      <div className="py-4">
         <img src={mockup} alt="" />
       </div>
     </section>
