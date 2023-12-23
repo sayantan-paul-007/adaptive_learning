@@ -54,9 +54,9 @@ const Home = () => {
       </div>
     </section>
     {/* Review Section */}
-      
         <Testimonial />
         <Footer />
+        
     </div>
   )
 }

@@ -15,13 +15,13 @@ const Footer = () => {
                     <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase">About</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Company</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Company</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Careers</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Careers</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Blog</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Blog</a>
                         </li>
                     </nav>
                 </div>
@@ -29,13 +29,13 @@ const Footer = () => {
                     <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase title-font">Support</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Contact Support</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Contact Support</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Help Resources</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Help Resources</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Release Updates</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Release Updates</a>
                         </li>
                     </nav>
                 </div>
@@ -44,13 +44,13 @@ const Footer = () => {
                     </h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Terms &amp; Privacy</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Terms &amp; Privacy</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Pricing</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Pricing</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">FAQ</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">FAQ</a>
                         </li>
                     </nav>
                 </div>
@@ -58,13 +58,13 @@ const Footer = () => {
                     <h2 class="mb-3 text-lg font-semibold font-montserrat tracking-widest text-gray-900 uppercase title-font">Contact</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Send a Message</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Send a Message</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Request a Quote</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">Request a Quote</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">+123-456-7890</a>
+                            <a href='www.google.com' class="text-gray-500 cursor-pointer hover:text-gray-900 font-notosans">+123-456-7890</a>
                         </li>
                     </nav>
                 </div>

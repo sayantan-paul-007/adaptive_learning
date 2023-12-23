@@ -9,7 +9,7 @@ module.exports = {
       // 'fourk': '2560px',
       'laptop': '1367px',
       'tablet': '1025px',
-      'mobile': '431px'
+      'mobile': '480px'
       
     },
     colors:{

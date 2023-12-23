@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'flowbite-react';
 const Youtube = () => {
     const ytdata = [
         {
@@ -25,15 +24,15 @@ const Youtube = () => {
         },
     ];
   return (
-    <section className='px-20 py-10 bg-rose-400'>
-<h3 className='font-bold text-[54px] font-montserrat py-2'>
+    <section className='px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-10 bg-emerald-600'>
+<h3 className='font-bold text-center text-7xl max-laptop:text-[54px] max-tablet:text-5xl max-mobile:text-4xl font-montserrat pt-4 pb-10'>
                 Find us on Youtube
             </h3>
-            <div className='bg-white rounded-xl shadow-lg px-5 pb-10  flex flex-row justify-around '>
+            <div className='bg-emerald-600 rounded-xl shadow-lg px-2 pb-10  flex flex-row max-mobile:flex-col justify-around '>
                 {
                     ytdata.map((yt) =>(
                         
-                        <div className='flex w-[30%] flex-col font-notosans py-[24px] hover:shadow-xl '>
+                        <div className='flex w-[30%] max-mobile:w-full flex-col font-notosans py-[24px] hover:shadow-xl '>
                             <a href={yt.link}>
                             <img src={yt.thumbnail} className='h-[200px] rounded-xl' alt='Yt1 Thumbnail'/>
                             <p className='py-2 text-lg text-left font-semibold'>
@@ -50,10 +49,10 @@ const Youtube = () => {
                 }
                 
             </div>
-            <div className='flex justify-center'>
-                <Button className='text-xl' gradientMonochrome="success">
+            <div className='flex justify-center py-8'>
+                <button className='py-4 px-10 rounded-xl font-bold font-notosans text-white bg-red-600 text-xl'>
                         Visit Our Channel
-                    </Button>
+                    </button>
             </div>
             
     </section>
