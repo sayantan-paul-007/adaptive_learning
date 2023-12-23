@@ -46,7 +46,7 @@ const Home = () => {
         <AdapFeatures />
     {/* Modes of Learning */}
     <section className="px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-8 bg-yellow-100">
-    <h3 className="font-bold text-center font-montserrat text-[54px] py-2">
+    <h3 className="font-bold text-center font-montserrat text-7xl max-laptop:text-[54px] max-tablet:text-5xl max-mobile:text-4xl py-2">
        Our Modes of Learning
       </h3>
       <div className="py-4">
