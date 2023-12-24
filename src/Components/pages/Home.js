@@ -6,7 +6,11 @@ import Testimonial from '../Testimonial'
 import Footer from '../Footer'
 import Carousel from '../Carousel'
 import logo1 from '../images/logo.png'
-import mockup from '../images/mockup.png'
+import mockup from '../images/mockup-new.png'
+import mockuppc from '../images/desktop-mockup.png'
+import mockuplaptop from '../images/laptop-mockup.png'
+import mockuptablet from '../images/tablet-mockup.png'
+import mockupmobile from '../images/mobile-mockup.png'
 import MetaBox from '../MetaBox'
 import AdapFeatures from '../AdapFeatures'
 const Home = () => {
@@ -45,12 +49,15 @@ const Home = () => {
         {/* Why choose Adaptive Learning */}
         <AdapFeatures />
     {/* Modes of Learning */}
-    <section className="px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-8 bg-yellow-100">
+    <section className="px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-4 py-8 bg-yellow-100">
     <h3 className="font-bold text-center font-montserrat text-7xl max-laptop:text-[54px] max-tablet:text-5xl max-mobile:text-4xl py-2">
        Our Modes of Learning
       </h3>
       <div className="py-4">
-        <img src={mockup} alt="" />
+        <img src={mockup} className='max-mobile:hidden' alt="" />
+        <div className='flex-col w-full hidden max-mobile:flex'>
+          <img src={mockuppc} className='py-3' alt="..." /><img src={mockuplaptop} className='py-3' alt="..." /><img src={mockuptablet} className='px-12 py-3' alt="..." /><img src={mockupmobile} className='py-3 px-12' alt="..." />
+        </div>
       </div>
     </section>
     {/* Review Section */}

@@ -31,13 +31,13 @@ const Youtube = () => {
 <h3 className='font-bold text-center text-7xl max-laptop:text-[54px] max-tablet:text-5xl max-mobile:text-4xl font-montserrat pt-4 pb-10'>
                 Find us on Youtube
             </h3>
-            <div className='rounded-xl px-2 py-4 border-2 flex flex-row max-mobile:flex-col justify-around '>
+            <div className='rounded-xl px-2 max-mobile:px-4 py-4 max-mobile:py-2 border-2 flex flex-row max-mobile:flex-col justify-around '>
                 {
                     ytdata.map((yt) =>(
                         
                         <div className='flex w-[30%] max-mobile:w-full flex-col font-notosans py-[24px]' key={yt.id}>
                             <a href={yt.link}>
-                            <img src={yt.thumbnail} className='h-[200px] rounded-xl' alt='Yt1 Thumbnail'/>
+                            <img src={yt.thumbnail} className='h-[200px] aspect-video rounded-xl' alt='Yt1 Thumbnail'/>
                             <p className='py-2 text-lg text-left font-semibold'>
                                 {yt.title}
                             </p>
