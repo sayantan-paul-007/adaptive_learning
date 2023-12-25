@@ -1,16 +1,7 @@
 import React from 'react'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './style.css'
-// import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
 const Testimonial = () => {
   return (
-    <section className='px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-8 flex flex-row justify-around max-mobile:flex-col items-center bg-zinc-400'>
+    <section className='px-[120px] max-laptop:px-20 max-tablet:px-10 max-mobile:px-5 py-12 flex flex-row justify-around max-mobile:flex-col items-center bg-zinc-400'>
         <div className="w-1/2 max-mobile:w-full">
         <h3 className='font-bold max-mobile:pb-8 text-center text-7xl max-laptop:text-[54px] max-tablet:text-5xl max-mobile:text-4xl py-2'>
                 Reviews of Learners
@@ -18,15 +9,8 @@ const Testimonial = () => {
         </div>
         <div className="w-1/2 max-mobile:w-full flex flex-row justify-center">
            <div className="px-4">
-                  <Swiper pagination={true} autoplay={{delay: 2500}} modules={[Autoplay, Pagination]} className="">
-            <SwiperSlide className="bg-primary-600"><TestimonyCard />
-        </SwiperSlide>
-            <SwiperSlide> <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" className='w-full aspect-video max-mobile:aspect-square' alt="..." /></SwiperSlide>
-            <SwiperSlide> <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" className='w-full aspect-video max-mobile:aspect-square' alt="..." /></SwiperSlide>
-            <SwiperSlide><img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" className='w-full aspect-video max-mobile:aspect-square' alt="..." /></SwiperSlide>
-            <SwiperSlide><img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" className='w-full aspect-video max-mobile:aspect-square' alt="..." /></SwiperSlide>
-          </Swiper>
-    
+                 <TestimonyCard />
+                 
            </div>
         </div>
     </section>
